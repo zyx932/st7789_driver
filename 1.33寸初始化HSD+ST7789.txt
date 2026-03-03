@@ -1,0 +1,123 @@
+	SPI2_LCD_CMD(0x11); 
+	RS_OUT_HIGH();
+
+	delay_ms(120);		
+	
+	CS_OUT_LOW();
+  	SPI2_LCD_CMD(0x36);
+  	SPI2_LCD_SendByte(0x00);
+	CS_OUT_HIGH();	
+	
+	CS_OUT_LOW();
+	SPI2_LCD_CMD(0x3A);	
+	SPI2_LCD_SendByte(0x05);
+	CS_OUT_HIGH();
+	
+	CS_OUT_LOW();
+	SPI2_LCD_CMD(0X21);
+	RS_OUT_HIGH();		
+	CS_OUT_HIGH();
+
+	CS_OUT_LOW();
+	SPI2_LCD_CMD(0xB2);	
+	SPI2_LCD_SendByte(0x1F);	
+	SPI2_LCD_SendByte(0x1F);
+	SPI2_LCD_SendByte(0x00);
+	SPI2_LCD_SendByte(0x33);
+	SPI2_LCD_SendByte(0x33);
+	CS_OUT_HIGH();	
+
+	CS_OUT_LOW();		
+	SPI2_LCD_CMD(0xB7);	
+	SPI2_LCD_SendByte(0x12);
+	CS_OUT_HIGH();
+
+	CS_OUT_LOW();		
+	SPI2_LCD_CMD(0xBB);	
+	SPI2_LCD_SendByte(0x2A);
+	CS_OUT_HIGH();	
+	
+	CS_OUT_LOW();		
+	SPI2_LCD_CMD(0xC0);	
+	SPI2_LCD_SendByte(0x2C);
+	CS_OUT_HIGH();
+		
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xC2);	
+	SPI2_LCD_SendByte(0x01);
+	CS_OUT_HIGH();	
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xC3);	
+	SPI2_LCD_SendByte(0x07);
+	CS_OUT_HIGH();	
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xC4);	
+	SPI2_LCD_SendByte(0x20);
+	CS_OUT_HIGH();	
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xC6);	
+	SPI2_LCD_SendByte(0x13);
+	CS_OUT_HIGH();		
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xD0);	
+	SPI2_LCD_SendByte(0xA4);
+	SPI2_LCD_SendByte(0xA1);
+	CS_OUT_HIGH();		
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xD6);	
+	SPI2_LCD_SendByte(0xA1);
+	CS_OUT_HIGH();	
+
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xE0);	
+	SPI2_LCD_SendByte(0xF0);	
+	SPI2_LCD_SendByte(0x06);	
+	SPI2_LCD_SendByte(0x0D);
+	SPI2_LCD_SendByte(0x0B);
+	SPI2_LCD_SendByte(0x0A);
+	SPI2_LCD_SendByte(0x07);
+	SPI2_LCD_SendByte(0x2E);
+	SPI2_LCD_SendByte(0x43);
+	SPI2_LCD_SendByte(0x45);
+	SPI2_LCD_SendByte(0x38);
+	SPI2_LCD_SendByte(0x14);
+	SPI2_LCD_SendByte(0x13);
+	SPI2_LCD_SendByte(0x25);
+	SPI2_LCD_SendByte(0x29);
+	CS_OUT_HIGH();		
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0xE1);	
+	SPI2_LCD_SendByte(0xF0);
+	SPI2_LCD_SendByte(0x07);
+	SPI2_LCD_SendByte(0x0A);
+	SPI2_LCD_SendByte(0x08);
+	SPI2_LCD_SendByte(0x07);
+	SPI2_LCD_SendByte(0x23);
+	SPI2_LCD_SendByte(0x2E);
+	SPI2_LCD_SendByte(0x33);
+	SPI2_LCD_SendByte(0x44);
+	SPI2_LCD_SendByte(0x3A);
+	SPI2_LCD_SendByte(0x16);
+	SPI2_LCD_SendByte(0x17);
+	SPI2_LCD_SendByte(0x26);
+	SPI2_LCD_SendByte(0x2C);
+	CS_OUT_HIGH();			
+
+	CS_OUT_LOW();	
+	SPI2_LCD_CMD(0x11);
+	RS_OUT_HIGH();	
+	CS_OUT_HIGH();	
+
+
+	delay_ms(100);
+	CS_OUT_LOW();		
+	SPI2_LCD_CMD(0x29);
+	RS_OUT_HIGH();		
+	CS_OUT_HIGH();	
